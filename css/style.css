@@ -1,0 +1,20 @@
+.header {
+  background-color: #FCEED5;
+}
+
+
+
+
+.header-container {
+  display:flex;
+  justify-content: space-between;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.header-container {
+  display:flex;
+  justify-content: space-between;
+}

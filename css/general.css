@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+.container {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin:0 auto;
+
+}
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #003458;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+}
+.btn--full {
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #003458;
+    color:#fff;
+    padding: 0.9rem 1.8rem;
+    border-radius: 20px;
+}
