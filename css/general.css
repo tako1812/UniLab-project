@@ -70,10 +70,10 @@ body {
   font-weight: 600;
   padding: 0.7rem 1.4rem;
 }
-.btn-intro {
+.btn-outline {
   background-color: #FCEED5;
   color: #003458;
-  border: 2px solid #003458;
+  border: 1px solid #003458;
 }
 .btn-intro span {
   font-size:1rem;
@@ -83,6 +83,8 @@ body {
   font-size: 4.4rem;
   font-weight:700;
   color:#003458;
+  
+  z-index:-1;
 }
 .heading-secondary {
   font-size: 3rem;

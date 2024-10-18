@@ -1,6 +1,8 @@
 .header {
   background-color: #FCEED5;
 }
+/*****************/
+/* Hero Section */
 .section-hero {
   background-color:#FCEED5;
   padding: 4.8rem 0 12rem 0;
@@ -12,8 +14,6 @@
 .hero {
   display:grid;
   grid-template-columns: 2fr 1fr;
-
-  
 }
 .background-img-1 {
   width:45rem;
@@ -30,9 +30,75 @@
 
   /*z-index: -1;*/
 }
+.background-img-3 {
+  position: absolute;
+  bottom:1%;
+  left:-7%;
+}
+.background-img-4 {
+  width:5rem;
+  position: absolute;
+  top:10%;
+  z-index: -2;
+}
 .hero-img {
   width:70rem;
   position: absolute;
   bottom:-35%;
   left:30%;
+}
+/*****************/
+/* Pets Section */
+.section-pets{
+  padding: 4.8rem 0 9.6rem 0;
+}
+.btn-more {
+  background-color: #fff;
+}
+.heading-container {
+  display:flex;
+  justify-content: space-between;
+}
+.subheading {
+  font-size: 1.2rem;
+  font-weight:500;
+}
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color:#003458;
+}
+.pets-container {
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.pet-card {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 12px;
+  padding:1rem;
+}
+.pet-card img {
+  width:100%;
+  border-radius: 9px;;
+}
+.breed-type {
+  font-size: 1.2rem;
+  font-weight:700;
+  color: #00171f;
+  margin-top: 0.5rem;;
+}
+.pet-description {
+  display:flex;
+  align-items: center;
+  gap:0.8rem;
+}
+.pet-price {
+  font-size: 1.2rem;
+  font-weight:700;
+  color:#00171f;
+}
+.description-container {
+  display:flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
