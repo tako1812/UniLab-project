@@ -12,12 +12,29 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  
+  
 }
 .container {
     max-width: 120rem;
     padding: 0 3.2rem;
     margin:0 auto;
 
+}
+/****************/
+/*  Header     */
+.header-container {
+  display:flex;
+  justify-content: space-between;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.header-container {
+  display:flex;
+  justify-content: space-between;
 }
 .main-nav-list {
   list-style: none;
@@ -31,18 +48,53 @@ body {
   text-decoration: none;
   color: #003458;
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 .btn {
     display: inline-block;
     text-decoration: none;
     border: none;
+    border-radius: 20px;
 }
 .btn--full {
-    font-size: 1.2rem;
-    font-weight: 600;
-    background-color: #003458;
-    color:#fff;
-    padding: 0.9rem 1.8rem;
-    border-radius: 20px;
+  background-color: #003458;
+  color:#fff;
+}
+.btn-join {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.9rem 1.8rem;
+}
+.btn-main {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.7rem 1.4rem;
+}
+.btn-intro {
+  background-color: #FCEED5;
+  color: #003458;
+  border: 2px solid #003458;
+}
+.btn-intro span {
+  font-size:1rem;
+  color: #003458;
+}
+.heading-primary {
+  font-size: 4.4rem;
+  font-weight:700;
+  color:#003458;
+}
+.heading-secondary {
+  font-size: 3rem;
+  font-weight:700;
+  color:#003458;
+}
+.hero-text {
+  display:flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.btns-box {
+  display:flex;
+  gap:1rem;
 }
