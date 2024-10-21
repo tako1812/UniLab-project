@@ -204,3 +204,56 @@
   height:5rem;
   margin-top:3rem;
 }
+/*********************/
+/* Adoption Section */
+/*******************/
+.section-adoption {
+  padding: 2rem 4rem 9.6rem 4rem;
+}
+.adoption-container {
+  height:30rem;
+  border-radius: 9px;
+  background-color:#FFB775;
+  display:flex;
+  position:relative;
+  overflow: hidden;
+}
+.content-adoption {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+
+  margin-right:60rem;
+  z-index: 1;
+  position:absolute;
+  top:20%;
+  left:5%;
+}
+.background-img-7 {
+  position:absolute;
+  left:-8%;
+  top:-15%;
+}
+.adoption-img{
+  z-index: 1;
+  position:absolute;
+  right:5%;
+  top:1%;
+  width:50rem;
+  margin-right:3rem;
+}
+.background-img-8 {
+  position:absolute;
+  top:15%;
+  right:-2%;
+}
+.adoption-heading-box {
+  display:flex;
+  align-items: center;
+  gap:2rem;
+}
+.adoption-heading-box img {
+  width:3rem;
+  align-self:center;
+}
