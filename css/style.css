@@ -47,41 +47,6 @@
   left:30%;
 }
 /*********************/
-/* Products Section */
-/*******************/
-.section-products{
-  padding-bottom: 4.6rem ;
-}
-.tag-container{
-  width:20rem;
-  height:3rem;
-  background-color: #FCEED5;
-  border-radius: 9px;
-  padding-right: 2rem;
-  
-  display:flex;
-  align-items: center;
-  gap:0.2rem;
-
-}
-.present-box-img{
-  width:2rem;
-  height:2rem;
-  object-fit: contain;
-}
-.dot-img{
-  object-fit: contain;
-  width:2rem;
-  height:2rem;
-}
-.tag-text {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color:#003458;
-  display:flex;
-  gap:0.3rem;
-}
-/*********************/
 /* Sellers Section  */
 /*******************/
 .section-sellers{
