@@ -46,113 +46,11 @@
   bottom:-35%;
   left:30%;
 }
-/*****************/
-/* Pets Section */
-/***************/
-.section-pets{
-  padding: 4.8rem 0 4.6rem 0;
-}
-.btn-more {
-  background-color: #fff;
-}
-.heading-container {
-  display:flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.subheading {
-  font-size: 1.2rem;
-  font-weight:500;
-}
-.heading-tertiary {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color:#003458;
-  margin-top:1rem;
-}
-.cards-container {
-  display:grid;
-  grid-template-columns: repeat(5, 1fr);
-}
-.card {
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-  border-radius: 12px;
-  padding:1rem 1rem 1.5rem;
-}
-.card img {
-  width:100%;
-  border-radius: 9px;;
-}
-.card-title {
-  font-size: 1.2rem;
-  font-weight:700;
-  color: #00171f;
-  margin-top: 0.8rem;
-}
-.description {
-  display:flex;
-  align-items: center;
-  gap:0.8rem;
-}
-.price {
-  font-size: 1.2rem;
-  font-weight:700;
-  color:#00171f;
-}
-.details-container {
-  display:flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  padding-left: 0.5rem;
-}
-/********************/
-/* feature Section */
-/******************/
-.section-feature {
-  padding: 0 5rem 9.6rem 5rem;
-}
-.feature {
-  height:30rem;
-  background-color: #003458;
-  display:flex;
-  position:relative;
-  overflow: hidden;
-}
-.background-img-5{
-  position:absolute;
-  right:-3%;
-}
-.content {
-  display:flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 2rem;
-  margin-left:60rem;
-  z-index: 1;
-
-  position:absolute;
-  top:20%;
-  right:8%;
-
-}
-.background-img-6 {
-  position:absolute;
-  top:15%;
-  left:-2%;
-}
-.feature-img {
-  z-index: 1;
-  margin-top:3rem;
-  margin-left:-3rem;;
-}
-.content h2{
-  text-align: right;
-}
 /*********************/
 /* Products Section */
 /*******************/
 .section-products{
-  padding: 4.8rem 0 4.6rem 0;
+  padding-bottom: 4.6rem ;
 }
 .tag-container{
   width:20rem;
@@ -176,7 +74,7 @@
   width:2rem;
   height:2rem;
 }
-.ssss {
+.tag-text {
   font-size: 1.1rem;
   font-weight: 700;
   color:#003458;
@@ -232,8 +130,8 @@
 }
 .background-img-7 {
   position:absolute;
-  left:-8%;
-  top:-15%;
+  left:-1%;
+  
 }
 .adoption-img{
   z-index: 1;
@@ -261,7 +159,7 @@
 /* Slider Section */
 /*****************/
 .section-slider{
-  padding: 0 2rem 9.6rem 2rem;
+  padding-bottom: 6.6rem ;
 }
 .slider {
   max-width: 120rem;
@@ -274,11 +172,10 @@
   position: absolute;
   top: 0;
   width: 95%;
-  height:40rem;
+  height:35rem;
 
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap:2rem;
 
   /* THIS creates the animation! */

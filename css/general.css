@@ -6,23 +6,20 @@
 html {
   font-size: 62.5%;
 }
-
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
-  
-  
 }
 .container {
     max-width: 120rem;
     padding: 0 3.2rem;
     margin:0 auto;
-
 }
 /****************/
-/*  Header     */
+/*   Header    */
+/**************/
 .header-container {
   display:flex;
   justify-content: space-between;
@@ -104,11 +101,112 @@ body {
 .text {
   font-size:1.2rem;
   line-height: 1.5;
-
 }
-/**************/
-/*  Footer   */
-/************/
+/********************/
+/* feature Section */
+/******************/
+.section-feature {
+  padding: 0 2rem 9.6rem 2rem;
+}
+.feature {
+  height:28rem;
+  background-color: #003458;
+  display:flex;
+  position:relative;
+  overflow: hidden;
+  border-radius: 9px;
+}
+.background-img-5{
+  position:absolute;
+  right:-1%;
+}
+.content {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+  margin-left:70rem;
+  z-index: 1;
+
+  position:absolute;
+  top:20%;
+  right:5%;
+}
+.background-img-6 {
+  position:absolute;
+  top:15%;
+  left:-2%;
+}
+.feature-img {
+  z-index: 1;
+  margin-top:3rem;
+  margin-left:-3rem;;
+}
+.content h2{
+  text-align: right;
+}
+/*******************/
+/*  Pets Section  */
+/*****************/
+.section-pets{
+  padding: 4.8rem 0rem 4.6rem 0rem;
+}
+.btn-more {
+  background-color: #fff;
+}
+.heading-container {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.subheading {
+  font-size: 1.2rem;
+  font-weight:500;
+}
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color:#003458;
+  margin-top:1rem;
+}
+.cards-container {
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.card {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 12px;
+  padding:1rem 1rem 1.5rem;
+}
+.card img {
+  width:100%;
+  border-radius: 9px;;
+}
+.card-title {
+  font-size: 1.2rem;
+  font-weight:700;
+  color: #00171f;
+  margin-top: 0.8rem;
+}
+.description {
+  display:flex;
+  align-items: center;
+  gap:0.8rem;
+}
+.price {
+  font-size: 1.2rem;
+  font-weight:700;
+  color:#00171f;
+}
+.details-container {
+  display:flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding-left: 0.5rem;
+}
+/*****************/
+/*    Footer    */
+/***************/
 .footer {
   padding: 4.8rem 0 4.6rem 0;
   background-image: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #f7e2c0bc 104.24%);

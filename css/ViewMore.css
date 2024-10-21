@@ -1,7 +1,23 @@
 .viewmore-feature {
     background-image: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #f7e2c0bc 104.24%); 
 }
-
+.viewmore-img {
+    margin-left:5rem;;
+}
+.viewmore-feature h1, 
+.viewmore-feature h2,
+.viewmore-feature p{
+    color:#fff;
+}
+.viewmore-btn1 {
+    background-color: #00171f;
+    color:#fff;
+    border-color:#fff;
+}
+.viewmore-btn2 {
+    background-color: #fff;
+    color:#00171f;
+}
 /*******************/
 /* Filter Section */
 /*****************/
@@ -12,6 +28,10 @@
     display:flex;
     flex-direction: column;
     gap:3rem;
+}
+.filter-heading {
+    display: flex;
+    justify-content: space-between;
 }
 .filter-type-heading {
     font-size:1.3rem;
@@ -64,4 +84,13 @@
     text-indent:5px;
     padding-left:5rem;
     text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: start;
+}
+.viewmore-card {
+    justify-self: start;
+    align-self:start;
 }
