@@ -90,6 +90,7 @@ body {
   font-size: 3rem;
   font-weight:700;
   color:#003458;
+  margin-top:0.8rem;
 }
 .hero-text {
   display:flex;
@@ -99,4 +100,9 @@ body {
 .btns-box {
   display:flex;
   gap:1rem;
+}
+.text {
+  font-size:1.2rem;
+  line-height: 1.5;
+
 }

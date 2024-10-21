@@ -3,13 +3,13 @@
 }
 /*****************/
 /* Hero Section */
+/***************/
 .section-hero {
   background-color:#FCEED5;
   padding: 4.8rem 0 12rem 0;
   position:relative;
   
   overflow: hidden;
-  
 }
 .hero {
   display:grid;
@@ -19,8 +19,7 @@
   width:45rem;
   position: absolute;
   bottom: 5%;
-  left:41%;
-  
+  left:41%; 
 }
 .background-img-2 {
   width:60rem;
@@ -49,14 +48,16 @@
 }
 /*****************/
 /* Pets Section */
+/***************/
 .section-pets{
-  padding: 4.8rem 0 9.6rem 0;
+  padding: 4.8rem 0 4.6rem 0;
 }
 .btn-more {
   background-color: #fff;
 }
 .heading-container {
   display:flex;
+  align-items: center;
   justify-content: space-between;
 }
 .subheading {
@@ -67,38 +68,118 @@
   font-size: 1.6rem;
   font-weight: 700;
   color:#003458;
+  margin-top:1rem;
 }
-.pets-container {
+.cards-container {
   display:grid;
   grid-template-columns: repeat(5, 1fr);
 }
-.pet-card {
+.card {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 12px;
-  padding:1rem;
+  padding:1rem 1rem 1.5rem;
 }
-.pet-card img {
+.card img {
   width:100%;
   border-radius: 9px;;
 }
-.breed-type {
+.card-title {
   font-size: 1.2rem;
   font-weight:700;
   color: #00171f;
-  margin-top: 0.5rem;;
+  margin-top: 0.8rem;
 }
-.pet-description {
+.description {
   display:flex;
   align-items: center;
   gap:0.8rem;
 }
-.pet-price {
+.price {
   font-size: 1.2rem;
   font-weight:700;
   color:#00171f;
 }
-.description-container {
+.details-container {
   display:flex;
   flex-direction: column;
   gap: 0.8rem;
+  padding-left: 0.5rem;
+}
+/********************/
+/* feature Section */
+/******************/
+.section-feature {
+  padding: 0 5rem 9.6rem 5rem;
+}
+.feature {
+  height:30rem;
+  background-color: #003458;
+  display:flex;
+  position:relative;
+  overflow: hidden;
+}
+.background-img-5{
+  position:absolute;
+  right:-3%;
+}
+.content {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+  margin-left:60rem;
+  z-index: 1;
+
+  position:absolute;
+  top:20%;
+  right:8%;
+
+}
+.background-img-6 {
+  position:absolute;
+  top:15%;
+  left:-2%;
+}
+.feature-img {
+  z-index: 1;
+  margin-top:3rem;
+  margin-left:-3rem;;
+}
+.content h2{
+  text-align: right;
+}
+/*********************/
+/* Products Section */
+/*******************/
+.section-products{
+  padding: 4.8rem 0 4.6rem 0;
+}
+.tag-container{
+  width:20rem;
+  height:3rem;
+  background-color: #FCEED5;
+  border-radius: 9px;
+  padding-right: 2rem;
+  
+  display:flex;
+  align-items: center;
+  gap:0.2rem;
+
+}
+.present-box-img{
+  width:2rem;
+  height:2rem;
+  object-fit: contain;
+}
+.dot-img{
+  object-fit: contain;
+  width:2rem;
+  height:2rem;
+}
+.ssss {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color:#003458;
+  display:flex;
+  gap:0.3rem;
 }
