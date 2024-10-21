@@ -20,51 +20,155 @@
   </head>
   <body>
     <header>
-        <div class="header-container container">
-          <div class="nav-container">
-            <img src="../assets/logo.png" alt="logo of Monito" />
-            <nav class="main-nav">
-              <ul class="main-nav-list">
-                <li><a class="main-nav-link" href="#">Home</a></li>
-                <li><a class="main-nav-link" href="#">Category</a></li>
-                <li><a class="main-nav-link" href="#">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="btn">
-            <button class="btn btn--full btn-join">join the community</button>
-            <div>
-              <select name="languages" id="languages">
-                <option value="VND">VND</option>
-                <option value="SPN">SPN</option>
-              </select>
-            </div>
+      <div class="header-container container">
+        <div class="nav-container">
+          <img src="../assets/logo.png" alt="logo of Monito" />
+          <nav class="main-nav">
+            <ul class="main-nav-list">
+              <li><a class="main-nav-link" href="#">Home</a></li>
+              <li><a class="main-nav-link" href="#">Category</a></li>
+              <li><a class="main-nav-link" href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="btn">
+          <button class="btn btn--full btn-join">join the community</button>
+          <div>
+            <select name="languages" id="languages">
+              <option value="VND">VND</option>
+              <option value="SPN">SPN</option>
+            </select>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
     <section class="section-feature">
-        <div class="feature viewmore-feature container">
-            <img class="feature-img" src="../assets/viewmore.img/dogs.png" alt="image of several dogs">
-            <div class="content">
-                <div>
-                    <h1 class="heading-primary">One More Friend</h1>
-                    <h2 class="heading-secondary">Thousands More Fun!</h2>
-                </div>
-                <p class="text">
-                Having a pets means you have more joy, a new friend, a new person <br> 
-                who will always be with you to have fun. We have 200+ different pets<br> that can meetyou needs!
-                </p>
-                <div class="btns-box">
-                    <button class="btn btn-main btn-outline">View Intro <span><ion-icon name="caret-forward-circle-outline"></ion-icon></span> </button>
-                    <button class="btn btn--full btn-main">Explore Now</button>
-                </div>
-            </div>
-            <div>
-                <img class="background-img-5" src="../assets/viewmore.img/Rectangle 1.png"/>
-            </div>
+      <div class="feature viewmore-feature container">
+        <img class="feature-img" src="../assets/viewmore.img/dogs.png" alt="image of several dogs">
+        <div class="content">
+          <div>
+            <h1 class="heading-primary">One More Friend</h1>
+            <h2 class="heading-secondary">Thousands More Fun!</h2>
+          </div>
+          <p class="text">
+            Having a pets means you have more joy, a new friend, a new person <br> 
+              who will always be with you to have fun. We have 200+ different pets<br> that can meetyou needs!
+          </p>
+          <div class="btns-box">
+            <button class="btn btn-main btn-outline">View Intro <span><ion-icon name="caret-forward-circle-outline"></ion-icon></span> </button>
+              button class="btn btn--full btn-main">Explore Now</button>
+          </div>
         </div>
+        <div>
+          <img class="background-img-5" src="../assets/viewmore.img/Rectangle 1.png"/>
+        </div>
+      </div>
+    </section>
+    <section class="section-filter">
+      <div>
+        <div class="filter-container container">
+          <div class="gender-box">
+            <p class="filter-type-heading">Gender</p>
+            <div class="inputs-container">
+              <div class="inputs-box">
+                <input type="checkbox" id="male" name="male" />
+                <label for="male">Male</label>
+              </div>
+              <div class="inputs-box">
+                <input type="checkbox" id="female" name="female"/>
+                <label for="female">Female</label>
+              </div>
+            </div>
+          </div>
+          <div class="color-box">
+            <p class="filter-type-heading">Color</p>
+            <div class="inputs-container">
+              <div class="inputs-box">
+                <input type="checkbox" id="Red" name="red" />
+                <img class="color-img" src="../assets/viewmore.img/colors/red.png">
+                <label for="red">Red</label>
+              </div>
+              <div class="inputs-box">
+                <input type="checkbox" id="apricot" name="apricot" />
+                <img class="color-img" src="../assets/viewmore.img/colors/apricot.png">
+                <label for="apricot">Apricot</label>
+              </div>
+              <div class="inputs-box">
+                <input type="checkbox" id="black" name="black" />
+                <img class="color-img" src="../assets/viewmore.img/colors/black.png">
+                <label for="black">Black</label>
+              </div>
+              <div class="inputs-box">
+                <input type="checkbox" id="black & white" name="black & white" />
+                <img class="color-img" src="../assets/viewmore.img/colors/black and white.png">
+                <label for="black & white">Black & White</label>
+              </div>
+              <div class="inputs-box">
+                <input type="checkbox" id="silver" name="silver" />
+                <img class="color-img" src="../assets/viewmore.img/colors/silver">
+                <label for="silver">Silver</label>
+              </div>
+              <div class="inputs-box">
+                <input type="checkbox" id="tan" name="tan" />
+                <img class="color-img" src="../assets/viewmore.img/colors/tan.png">
+                <label for="tan">Tan</label>
+              </div>
+            </div>
+          </div>
+          <div class="price-box">
+            <p class="filter-type-heading">Price</p>
+            <div class="inputs-container">
+              <input
+                class="min-price-input"
+                type="text"
+                placeholder="Min "
+              />
+              <span>&#11165;></span>
+              <input
+                class="max-price-input"
+                type="text"
+                name="Max"
+                placeholder="Max"
+              />
+            </div>
+          </div>
+          <div class="breed-box">
+            <p class="filter-type-heading">Gender</p>
+            <div class="inputs-container">
+              <div class="inputs-box">
+                <input type="checkbox" id="small" name="small" />
+                <label for="small">Small</label>
+              </div>
+              <div class="inputs-box">
+                <input type="checkbox" id="medium" name="medium"/>
+                <label for="medium">Medium</label>
+              </div>
+              <div class="inputs-box">
+                <input type="checkbox" id="large" name="large"/>
+                <label for="large">Large</label>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="pets-container container">
+          <div class="pet-card">
+            <img src="../assets/pets.images/image 1.png" alt="dog breeds image">
+            <div class="description-container">
+              <p class="breed-type">MO231 - Pomeranian White</p>
+              <div class="pet-description">
+                <p>Gene: <b>Male</b></p>
+                <span>.</span>
+                <p>Age: <b>02 months</b></p>
+              </div>
+              <p class="pet-price">7.900.000 VND</p>
+            </div>
+          </div>
+        </div> 
+      </div>
     </section>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
+
