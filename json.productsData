@@ -8,7 +8,7 @@
         "avatar": "image-1.png"
     },
     {
-        "id": "u3",
+        "id": "u2",
         "title": "Natural Balance dog food lamb",
         "product": "Dog Food",
         "size": "500gm",
@@ -16,7 +16,7 @@
         "avatar": "image-2.png"
     },
     {
-        "id": "u4",
+        "id": "u3",
         "title": "Wholesome Blend kitten food turkey",
         "product": "Cat Food",
         "size": "200gm",
@@ -24,38 +24,38 @@
         "avatar": "image-3.png"
     }
     {
-        "id": "u2",
+        "id": "u4",
         "title": "Plush Pet Toy",
         "product": "Toy",
         "price": "150.000 VND",
-        "avatar": "image-2.png"
-    },
-    {
-        "id": "u3",
-        "title": "Soft Cat Bed",
-        "product": "Bed",
-        "price": "300.000 VND",
-        "avatar": "image-3.png"
-    },
-    {
-        "id": "u4",
-        "title": "Durable Dog Leash",
-        "product": "Accessory",
-        "price": "100.000 VND",
         "avatar": "image-4.png"
     },
     {
         "id": "u5",
-        "title": "Interactive Bird Toy",
-        "product": "Toy",
-        "price": "200.000 VND",
+        "title": "Soft Cat Bed",
+        "product": "Bed",
+        "price": "300.000 VND",
         "avatar": "image-5.png"
     },
     {
         "id": "u6",
+        "title": "Durable Dog Leash",
+        "product": "Accessory",
+        "price": "100.000 VND",
+        "avatar": "image-6.png"
+    },
+    {
+        "id": "u7",
+        "title": "Interactive Bird Toy",
+        "product": "Toy",
+        "price": "200.000 VND",
+        "avatar": "image-7.png"
+    },
+    {
+        "id": "u8",
         "title": "Pet Water Fountain",
         "product": "Accessory",
         "price": "400.000 VND",
-        "avatar": "image-6.png"
+        "avatar": "image-8.png"
     }
 ]
