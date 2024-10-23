@@ -1,0 +1,61 @@
+[
+    {
+        "id": "u1",
+        "title": "Purely Paws chicken cat food",
+        "product": "Cat Food",
+        "size": "400gm",
+        "price": "160.000 VND",
+        "avatar": "image-1.png"
+    },
+    {
+        "id": "u3",
+        "title": "Natural Balance dog food lamb",
+        "product": "Dog Food",
+        "size": "500gm",
+        "price": "180.000 VND",
+        "avatar": "image-2.png"
+    },
+    {
+        "id": "u4",
+        "title": "Wholesome Blend kitten food turkey",
+        "product": "Cat Food",
+        "size": "200gm",
+        "price": "120.000 VND",
+        "avatar": "image-3.png"
+    }
+    {
+        "id": "u2",
+        "title": "Plush Pet Toy",
+        "product": "Toy",
+        "price": "150.000 VND",
+        "avatar": "image-2.png"
+    },
+    {
+        "id": "u3",
+        "title": "Soft Cat Bed",
+        "product": "Bed",
+        "price": "300.000 VND",
+        "avatar": "image-3.png"
+    },
+    {
+        "id": "u4",
+        "title": "Durable Dog Leash",
+        "product": "Accessory",
+        "price": "100.000 VND",
+        "avatar": "image-4.png"
+    },
+    {
+        "id": "u5",
+        "title": "Interactive Bird Toy",
+        "product": "Toy",
+        "price": "200.000 VND",
+        "avatar": "image-5.png"
+    },
+    {
+        "id": "u6",
+        "title": "Pet Water Fountain",
+        "product": "Accessory",
+        "price": "400.000 VND",
+        "avatar": "image-6.png"
+    }
+]
