@@ -1,0 +1,63 @@
+.section-getInTouch {
+    padding: 5rem 0 7rem 0;
+}
+.getInTouch-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2rem;
+}
+.data-container {
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.form-getInTouch {
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.form-getInTouch input, 
+.form-getInTouch select,
+.form-getInTouch button {
+  width: 60%;
+  padding: 1rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  border: none;
+  border:0.2px solid #a2abaf2a;
+  border-radius: 5px;
+} 
+.form-getInTouch select {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.form-getInTouch button{
+    font-size:1.2rem;
+    background-color: #003458;
+    color:#fff;
+}
+.contacts-container{
+    display:flex;
+    gap:1rem;
+}
+.contacts-container img{
+    width:2rem;
+}
+.contact-box{
+    display:flex;
+    gap:1rem;
+}
+.contact-box p {
+    font-weight: 1.2rem;
+    font-weight: 700;
+}
+.contact-box: p {
+    font-weight: 1.3rem;
+    font-weight: 700;
+}
+.contact-info {
+    color:#00335862;
+}
+
+
+
