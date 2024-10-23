@@ -75,6 +75,8 @@
     color:#fff;
     background-color:#003458;
     border-radius:3px;
-    padding:1rem 11rem;
-    
+    padding:1rem 11rem; 
+}
+.reset-box{
+    padding-top:10rem;
 }
