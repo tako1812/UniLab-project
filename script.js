@@ -10,9 +10,6 @@ const ViewMoreBtn = document.querySelector('.btn-ViewMore');
 ViewMoreBtn.addEventListener('click', function() {
   window.location.href="pages/ViewMore.html";
 });
-
-
-
 /********************/
 /*      Slider     */
 /******************/
@@ -26,21 +23,21 @@ const goToSlide = function (slide) {
 };
 
 const nextSlide = function () {
-    if (curSlide === maxSlide - 1) {
-      curSlide = 0;
-    } else {
-      curSlide++;
-    };
-    goToSlide(curSlide);
+  if (curSlide === maxSlide - 1) {
+    curSlide = 0;
+  } else {
+    curSlide++;
+  };
+  goToSlide(curSlide);
 };
 
 const prevSlide = function () {
-    if (curSlide === 0) {
-      curSlide = maxSlide - 1;
-    } else {
-      curSlide--;
-    }
-    goToSlide(curSlide);
+  if (curSlide === 0) {
+    curSlide = maxSlide - 1;
+  } else {
+    curSlide--;
+  }
+  goToSlide(curSlide);
 };
 
 btnRight.addEventListener('click', nextSlide);
@@ -72,6 +69,8 @@ navigator.geolocation.getCurrentPosition(
 /* Render pets section  */
 /***********************/
 const cardsContainer = document.querySelector('.pets-card-container');
+
+
 const renderPetsCard = async function () {
     cardsContainer.innerHTML = "";
     const res = await fetch(
@@ -102,18 +101,15 @@ renderPetsCard();
 /*****************************/
 /* Render Products section  */
 /***************************/
-/*
 const productsContainer = document.querySelector('.products-container');
 
 const renderProductsCard = async function () {
-    productsContainer.innerHTML = "";
-    const res = await fetch(
-      "json.productsData"
-    );
-    const datas = await res.json();
-    console.log(datas);
-
-    
+  productsContainer.innerHTML = "";
+  const res = await fetch(
+    "json.data2"
+  );
+  const datas = await res.json();
+  console.log(datas);
     datas.map((data) => {
         const html= `
         <div class="card">
@@ -136,6 +132,38 @@ const renderProductsCard = async function () {
         `;
         productsContainer.insertAdjacentHTML("afterbegin", html);
     })
-  };
-  renderProductsCard();
-*/
+};
+renderProductsCard();
+/********************* */
+
+
+
+const viewMorePetsConatiner = document.querySelector('.view-more-pets-container');
+
+const renderViewMorePets = async function () {
+  viewMorePetsConatiner.innerHTML = "";
+  const res = await fetch("json.data");
+  const datas = await res.json();
+  console.log(datas);
+
+  
+  datas.map((data) => {
+    const html= `
+    <div class="card">
+      <img src="assets/pets.images/${data.avatar}" alt="dog breed image">
+        <div class="details-container">
+          <p class="card-title">${data.breed}</p>
+          <div class="description">
+            <p>Gene: <b>${data.gene}</b></p>
+            <span>.</span>
+            <p>Age: <b>${data.age}</b></p>
+          </div>
+          <p class="price">${data.price}</p>
+        </div>
+    </div>
+    `;
+  viewMorePetsConatiner.innerHTML += html;
+  })
+};
+renderViewMorePets();
+

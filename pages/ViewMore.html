@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="../css/general.css" />
     <link rel="stylesheet" href="../css/ViewMore.css"/>
-    <script defer src="../script.js"></script>
+    <script defer src="../viewMore.js"></script>
     <title>Monito</title>
   </head>
   <body>
@@ -68,14 +68,16 @@
         </div>
       </section>
       <div class="container">
-        <div class="filter-heading">
+        <div class="filter-headings">
           <h3 class="heading-tertiary">Filter</h3>
-          <div>
-            <h3 class="heading-tertiary">Small Dogs</h3>
-            <span class="subheading">52 puppies</span>
+          <div class="filter-heading">
+            <div class="subheadings-box">
+              <h3 class="heading-tertiary">Small Dogs</h3>
+              <span class="subheading">52 puppies</span>
+            </div>
+            <button class="btn btn-main btn-outline btn-more">View more <span><ion-icon name="chevron-forward-outline"></ion-icon></span> 
+            </button>
           </div>
-          <button class="btn btn-main btn-outline btn-more">View more <span><ion-icon name="chevron-forward-outline"></ion-icon></span> 
-          </button>
         </div>
       </div>
       <section class="section-filter">
@@ -135,15 +137,15 @@
                 <input
                   class="min-price-input"
                   type="text"
-                  placeholder="Min "
+                  placeholder="Min"
                 />
-                <span>&#11165;></span>
+                <span class="min-arrow"> &#8597;</span>
                 <input
                   class="max-price-input"
                   type="text"
-                  name="Max"
                   placeholder="Max"
                 />
+                <span class="max-arrow"> &#8597;</span>
               </div>
             </div>
             <div class="breed-box">
@@ -164,9 +166,9 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="view-more-pets-container">
             <div class="card">
-              <img src="../assets/pets.images/image 1.png" alt="dog breed image">
+              <img src="../assets/pets.images/pet-1.png" alt="dog breed image">
               <div class="details-container">
                 <p class="card-title">MO231 - Pomeranian White</p>
                 <div class="description">
@@ -177,10 +179,8 @@
                 <p class="price">7.900.000 VND</p>
               </div>
             </div>
-          </div>
-          <div>
             <div class="card">
-              <img src="../assets/pets.images/image 1.png" alt="dog breed image">
+              <img src="../assets/pets.images/pet-1.png" alt="dog breed image">
               <div class="details-container">
                 <p class="card-title">MO231 - Pomeranian White</p>
                 <div class="description">
@@ -191,10 +191,8 @@
                 <p class="price">7.900.000 VND</p>
               </div>
             </div>
-          </div>
-          <div>
             <div class="card">
-              <img src="../assets/pets.images/image 1.png" alt="dog breed image">
+              <img src="../assets/pets.images/pet-1.png" alt="dog breed image">
               <div class="details-container">
                 <p class="card-title">MO231 - Pomeranian White</p>
                 <div class="description">
@@ -205,10 +203,8 @@
                 <p class="price">7.900.000 VND</p>
               </div>
             </div>
-          </div>
-          <div>
-            <div class="card viewmore-card">
-              <img src="../assets/pets.images/image 1.png" alt="dog breed image">
+            <div class="card">
+              <img src="../assets/pets.images/pet-1.png" alt="dog breed image">
               <div class="details-container">
                 <p class="card-title">MO231 - Pomeranian White</p>
                 <div class="description">
@@ -264,7 +260,7 @@
           <div class="copyright">
             <p class="copyright">© 2022 Monito. All rights reserved</p>
           </div>
-          <img class="footer-logo" src="assets/logo.png">
+          <img class="footer-logo" src="../assets/logo.png">
           <nav class="resources">
             <ul class="resources-list">
               <li>
