@@ -5,9 +5,7 @@ const renderViewMorePets = async function () {
   //viewMorePetsConatiner.innerHTML = "";
   const res = await fetch("../json.data");
   const datas = await res.json();
-  console.log(datas);
-
-  
+ 
   datas.map((data) => {
     const html= `
     <div class="card">
@@ -24,6 +22,16 @@ const renderViewMorePets = async function () {
     </div>
       `;
     viewMorePetsConatiner.insertAdjacentHTML("afterbegin", html);
+
+
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => card.addEventListener("click", function() {
+        window.location.href = "./pages/PetsDetails.html";
+        /*const pageId = card.getAttribute('dataset');
+        localStorage.setItem("page-id",pageId);
+        usersdata = JSON.parse( localStorage.getItem('pageId'));
+        console.log(usersdata);*/
+    }));
   });
 };
 renderViewMorePets();

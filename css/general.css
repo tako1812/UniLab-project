@@ -47,6 +47,12 @@ body {
   font-weight: 600;
   font-size: 1.4rem;
 }
+.contacts-page{
+  text-decoration: none;
+  color: #003458;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
 .btn {
     display: inline-block;
     text-decoration: none;

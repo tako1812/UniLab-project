@@ -2,14 +2,31 @@
 const slides = document.querySelectorAll('.slide-container');
 const btnLeft = document.querySelector('.btn-left');
 const btnRight = document.querySelector('.btn-right');
+
+
+const btnReset = document.querySelector('.btn-reset');
+const ViewMoreBtn = document.querySelector('.btn-ViewMore');
+const btnJoin = document.querySelector('.btn-join');
+const resetLink = document.querySelector('.reset-link');
+const cardsContainer = document.querySelector('.pets-card-container');
+const productsContainer = document.querySelector('.products-container');
+const viewMorePetsConatiner = document.querySelector('.view-more-pets-container');
 /********************/
 /*  Open pages     */
 /******************/
-const ViewMoreBtn = document.querySelector('.btn-ViewMore');
-
 ViewMoreBtn.addEventListener('click', function() {
   window.location.href="pages/ViewMore.html";
 });
+btnJoin.addEventListener('click', function() {
+  window.location.href="pages/JoinCom.html";
+});
+/*
+resetLink.addEventListener('click', function() {
+  window.location.href="pages/reset.html";
+});
+btnReset.addEventListener('click', function() {
+  window.location.href="./pages/sendLink.html";
+});*/
 /********************/
 /*      Slider     */
 /******************/
@@ -43,34 +60,9 @@ const prevSlide = function () {
 btnRight.addEventListener('click', nextSlide);
 btnLeft.addEventListener('click', prevSlide);
 
-/********************/
-/*   Display Map   */
-/******************/
-if(navigator.geolocation)
-navigator.geolocation.getCurrentPosition(
-    function(position) {
-        const {latitude} = position.coords;
-        const {longitude} = position.coords;
-
-        const coords = [latitude, longitude];
-
-        const map = L.map('map').setView(coords, 13);
-
-        L.tileLayer('https://tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        L.marker(coords).addTo(map)
-            .bindPopup('A pretty CSS popup.<br> Easily customizable.')
-            .openPopup();
-    }
-);
 /*************************/
 /* Render pets section  */
 /***********************/
-const cardsContainer = document.querySelector('.pets-card-container');
-
-
 const renderPetsCard = async function () {
     cardsContainer.innerHTML = "";
     const res = await fetch(
@@ -101,8 +93,6 @@ renderPetsCard();
 /*****************************/
 /* Render Products section  */
 /***************************/
-const productsContainer = document.querySelector('.products-container');
-
 const renderProductsCard = async function () {
   productsContainer.innerHTML = "";
   const res = await fetch(
@@ -134,11 +124,9 @@ const renderProductsCard = async function () {
     })
 };
 renderProductsCard();
-/********************* */
-
-
-
-const viewMorePetsConatiner = document.querySelector('.view-more-pets-container');
+/*****************************/
+/*    Render More Pets      */
+/***************************/
 
 const renderViewMorePets = async function () {
   viewMorePetsConatiner.innerHTML = "";
@@ -146,7 +134,6 @@ const renderViewMorePets = async function () {
   const datas = await res.json();
   console.log(datas);
 
-  
   datas.map((data) => {
     const html= `
     <div class="card">

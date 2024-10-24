@@ -80,3 +80,14 @@
 .reset-box{
     padding-top:10rem;
 }
+.reset-link,
+.createAcc-link {
+    text-decoration: none;
+}
+.not-valid {
+    color: red;
+}
+.is-valid {
+    color: green;
+}
+  

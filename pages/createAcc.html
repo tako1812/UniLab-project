@@ -16,6 +16,7 @@
     
         <link rel="stylesheet" href="../css/general.css" />
         <link rel="stylesheet" href="../css/JoinCom.css" />
+        <script defer src="../script/createAcc.js"></script>
         <title>Monito</title>
       
     </head>
@@ -44,6 +45,9 @@
                                       name="name"
                                       required
                                     />
+                                    <span class="valid-name">
+                                        &#10003;min 2 symbols
+                                    </span>
                                     
                                 </div>
                                 <div>
@@ -54,17 +58,23 @@
                                         type="email"
                                         name="email"
                                         required
-                                        />
+                                    />
+                                    <span class="valid-email">
+                                        &#10003;includes @gmail
+                                    </span>
                                 </div>
                                 <div>
                                     <label for="password">Password</label> 
                                     <input
-                                    class="form-input-email"
+                                    class="form-input-password"
                                     id="password"
                                     type="password"
                                     name="password"
                                     required
                                     />
+                                    <span class="valid-pass">
+                                        &#10003;min 8 symbols
+                                    </span>
                                 </div>
                                 <a><p class="agree-terms">by creating an account you agree with out terms of service, privacy police</p></a>
                                 <button class="btn btn-login"type="submit">create account</button>
